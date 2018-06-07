@@ -13,7 +13,7 @@ public class MainActivity extends BaseAct {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //PC提交的   笔记本提交的 3
+        //提交到git
     }
 
     /**
