@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/splash</item>
+    </style>
+
+    <!--通用无遮罩dialog样式-->
+    <style name="loading_style" parent="android:Theme.Dialog">
+        <!-- 背景颜色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 定义对话框显示的动画 -->
+        <!--<item name="android:windowAnimationStyle" >@style/LocationAnimationStyle</ item>-->
+        <!-- 背后的阴影 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!--去掉标题-->
+        <item name="android:windowNoTitle" >true</item>
+        <!-- 点击外部是否允许取消 -->
+        <!--<item name="android:windowCloseOnTouchOutside" >true</ item>-->
+    </style>
+
+    <!--加载progressBar样式-->
+    <style name="loading_progress_style" parent="android:Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/progress_rotate</item>
+        <item name="android:indeterminateDuration">500</item>
+    </style>
+
+    <!--通用dialog样式-->
+    <style name="sweet_dialog_style" parent="loading_style">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 弹出框动画 -->
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+</resources>

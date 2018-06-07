@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.john.testproject">
+    <!--读取通话记录-->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <!-- 读取短信息 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 读取通讯录 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--<uses-permission android:name="android.permission.WRITE_CONTACTS"/>-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--读取外部存储权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--写入外部存储权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 判断是否有外部存储权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.PermissionAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.NetWorkAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ScreenFitAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.FileAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.WebAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LogToastAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.MVPAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RefreshAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.LunchImproveAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.OtherUtilAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.WidgetAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GuideAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CarouselAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.DialogsAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.PopsAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SlideAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SlideTextAc"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.GlideAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.GreenDaoAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SelectorAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.EncryptionAct"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".activity.PictureAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.MaterialAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.FoldAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.StretchAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.KeyBoardAct"
+            android:screenOrientation="portrait" />
+
+        <!--优化的服务-->
+        <service android:name=".improve.InitializeService" />
+
+        <!-- 友盟的key与渠道 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_KEY}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!--Glide配置-->
+        <meta-data
+            android:name="com.john.testproject.glide.GlideConfiguration"
+            android:value="GlideModule" />
+    </application>
+
+</manifest>

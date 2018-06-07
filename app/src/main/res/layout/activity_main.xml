@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--测试屏幕适配-->
+        <Button
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:onClick="test1"
+            android:text="权限管理" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test2"
+            android:text="网络请求框架" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test3"
+            android:text="屏幕适配" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test9"
+            android:text="MVP架构类" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test4"
+            android:text="文件目录操作" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test5"
+            android:text="webview框架"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test6"
+            android:text="自定义view库"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test8"
+            android:text="Glide图片管理"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test10"
+            android:text="刷新框架" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test11"
+            android:text="启动优化" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test12"
+            android:text="其他工具类" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test13"
+            android:text="GreenDao数据库管理"
+            android:textAllCaps="false" />
+
+        <Button
+            android:text="材料设计新特性"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="test14"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义键盘"
+            android:onClick="test15"
+            />
+    </LinearLayout>
+
+
+</ScrollView>
+
+

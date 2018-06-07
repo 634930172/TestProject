@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">项目框架</string>
+    <string name="permission_message_permission_failed">我们需要的一些权限被您拒绝或者系统发生错误申请失败，请您到设置页面手动授权，否则功能无法正常使用！</string>
+    <string name="app_exit">再按一次退出程序</string>
+
+    <!-- 引导页图片 -->
+    <array name="guideImages">
+        <item>@mipmap/guide_01</item>
+        <item>@mipmap/guide_02</item>
+        <item>@mipmap/guide_03</item>
+    </array>
+
+    <string name="popup_pick">拍照</string>
+    <string name="popup_take">从手机相册选择</string>
+    <string name="popup_delete">删除</string>
+    <string name="popup_cancel">取消</string>
+
+    <string name="dialog_file_too_big">文件过大</string>
+</resources>

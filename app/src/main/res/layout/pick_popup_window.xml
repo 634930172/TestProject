@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen15"
+        android:layout_marginRight="@dimen/dimen15"
+        android:background="@drawable/pick_popup_shape"
+        android:orientation="vertical">
+
+        <com.john.testproject.widget.NoDoubleClickButton
+            android:id="@+id/firstBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/dimen15"
+            android:text="@string/popup_take"
+            android:textColor="@color/text_blue"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen1"
+            android:background="@color/colorGrey" />
+
+        <com.john.testproject.widget.NoDoubleClickButton
+            android:id="@+id/secondBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/dimen15"
+            android:text="@string/popup_pick"
+            android:textColor="@color/text_blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.john.testproject.widget.NoDoubleClickButton
+        android:id="@+id/cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/dimen15"
+        android:background="@drawable/pick_popup_shape"
+        android:padding="@dimen/dimen15"
+        android:text="@string/popup_cancel"
+        android:textColor="@color/text_blue"
+        android:textSize="18sp" />
+</LinearLayout>

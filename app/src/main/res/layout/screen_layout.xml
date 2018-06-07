@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:text="列出所有可能"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="all"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="makeXml"
+        android:text="生成所有XML"/>
+
+    <TextView
+        android:id="@+id/ttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bb"
+        android:layout_width="@dimen/dimen80"
+        android:layout_height="wrap_content"
+        android:text="测试宽度"
+        />
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</LinearLayout>
