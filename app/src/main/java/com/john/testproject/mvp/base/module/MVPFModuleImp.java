@@ -12,7 +12,7 @@ import com.john.testproject.network.RxRequestCallBack;
  * Description:Module数据交互类
  */
 
-public class MVPFModule extends BaseModule implements MVPModule {
+public class MVPFModuleImp extends BaseModule implements MVPModule {
 
     public String setLocalDatas(String str){
         return str+"从MVPFModule转了一圈";

@@ -1,14 +1,9 @@
 package com.john.testproject.mvp.base.temp;
 
-import com.john.testproject.entity.HttpResult;
-import com.john.testproject.mvp.base.module.MVPFModule;
+import com.john.testproject.mvp.base.module.MVPFModuleImp;
 import com.john.testproject.mvp.base.module.MVPModule;
 import com.john.testproject.mvp.base.presenter.BasePresenter;
 import com.john.testproject.mvp.base.view.MVPView;
-import com.john.testproject.network.AppService;
-import com.john.testproject.network.HttpClient;
-import com.john.testproject.network.RxRequestCallBack;
-import com.john.testproject.utils.L;
 
 /**
  * Author: John
@@ -20,10 +15,10 @@ import com.john.testproject.utils.L;
 
 public class MVPPresenter extends BasePresenter<MVPView> {
 
-    private MVPFModule mvpfModule;
+    private MVPModule mvpfModule;
 
     public MVPPresenter() {
-        mvpfModule = new MVPFModule();
+        mvpfModule = new MVPFModuleImp();
     }
 
     public void fetch(String s) {

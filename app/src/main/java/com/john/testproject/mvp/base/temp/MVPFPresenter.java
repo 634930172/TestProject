@@ -1,8 +1,6 @@
 package com.john.testproject.mvp.base.temp;
 
-import com.john.testproject.entity.HttpResult;
-import com.john.testproject.mvp.base.bean.GirlsParser;
-import com.john.testproject.mvp.base.module.MVPFModule;
+import com.john.testproject.mvp.base.module.MVPFModuleImp;
 import com.john.testproject.mvp.base.module.MVPModule;
 import com.john.testproject.mvp.base.presenter.BasePresenter;
 import com.john.testproject.mvp.base.view.MVPFView;
@@ -17,9 +15,9 @@ import com.john.testproject.mvp.base.view.MVPFView;
 
 class MVPFPresenter extends BasePresenter<MVPFView> {
     private MVPModule mvpfModule;
-
+    //面向接口编程
     MVPFPresenter(){
-        mvpfModule=new MVPFModule();
+        mvpfModule=new MVPFModuleImp();
 
     }
 
