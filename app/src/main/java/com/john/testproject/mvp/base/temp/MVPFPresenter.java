@@ -16,7 +16,7 @@ import com.john.testproject.mvp.base.view.MVPFView;
  */
 
 class MVPFPresenter extends BasePresenter<MVPFView> {
-    private MVPFModule mvpfModule;
+    private MVPModule mvpfModule;
 
     MVPFPresenter(){
         mvpfModule=new MVPFModule();
