@@ -1,51 +1,56 @@
-package com.john.testproject.greendao.database;
+package com.john.testproject.greendao.entity;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
-import org.greenrobot.greendao.annotation.Transient;
 import org.greenrobot.greendao.annotation.Generated;
 
 /**
  * Author: John
- * E-mail：634930172@qq.com
- * Date: 2018/2/1 16:09
- * Description:Customer数据库
+ * E-mail: 634930172@qq.com
+ * Date: 2018/7/15 23:42
+ * <p/>
+ * Description:
  */
 @Entity
-public class Customer {
+public class Student {
+
     @Id(autoincrement = true)
     private Long id;
     private String name;
-    private int age;
+    private String age;
 
-    @Transient
-    private int tempUsageCount; // not persisted
-    @Generated(hash = 463016582)
-    public Customer(Long id, String name, int age) {
+    @Generated(hash = 563965806)
+    public Student(Long id, String name, String age) {
         this.id = id;
         this.name = name;
         this.age = age;
     }
-    @Generated(hash = 60841032)
-    public Customer() {
+
+    @Generated(hash = 1556870573)
+    public Student() {
     }
+
     public Long getId() {
-        return this.id;
+        return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getName() {
-        return this.name;
+        return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
-    public int getAge() {
-        return this.age;
-    }
-    public void setAge(int age) {
-        this.age = age;
+
+    public String getAge() {
+        return age;
     }
 
+    public void setAge(String age) {
+        this.age = age;
+    }
 }

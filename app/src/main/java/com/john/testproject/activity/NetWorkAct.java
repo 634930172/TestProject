@@ -28,8 +28,7 @@ import com.john.testproject.utils.ContextHolder;
 import com.john.testproject.utils.L;
 import com.john.testproject.utils.SharedInfo;
 
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
+
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -37,7 +36,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-import java.util.Observable;
+
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;

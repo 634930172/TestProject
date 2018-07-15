@@ -1,20 +1,11 @@
 package com.john.testproject.activity;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ListView;
-
 import com.john.testproject.R;
-import com.john.testproject.adapter.AbsBaseAdapter;
-import com.john.testproject.adapter.DataAdapter;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Author: John
@@ -25,7 +16,7 @@ import java.util.List;
 
 public class FoldAct extends BaseAct {
 
-    private ListView listView;
+
 
 
     @Override

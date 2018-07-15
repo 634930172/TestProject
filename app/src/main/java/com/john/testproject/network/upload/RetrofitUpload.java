@@ -20,6 +20,13 @@ public class RetrofitUpload {
             params = new LinkedHashMap<>();
         }
 
+        public Map<String, RequestBody> build() {
+            return params;
+        }
+
+        /**
+         * 文件形式上传
+         */
         public Builder addFile(String key, File file) {
             RequestBody requestBody = RequestBody
                     .create(MultipartBody.FORM, file);
@@ -27,6 +34,9 @@ public class RetrofitUpload {
             return this;
         }
 
+        /**
+         * 字段上传
+         */
         public Builder addString(String key, String value) {
             RequestBody requestBody = RequestBody
                     .create(MultipartBody.FORM, value);
@@ -34,24 +44,26 @@ public class RetrofitUpload {
             return this;
         }
 
+        /**
+         * 数组形式上传
+         */
         public Builder addByte(String key, byte[] bytes) {
             RequestBody requestBody = RequestBody
                     .create(MultipartBody.FORM, bytes);
-            long currentTime=System.currentTimeMillis();
-            params.put(key + "\"; filename=\"" + currentTime+".jpg", requestBody);
+            long currentTime = System.currentTimeMillis();
+            params.put(key + "\"; filename=\"" + currentTime + ".jpg", requestBody);
             return this;
         }
 
-        public Map<String, RequestBody> build() {
-            return params;
-        }
 
-
-        public Builder addByte(String key, byte[] bytes,int size) {
+        /**
+         * 多图上传
+         */
+        public Builder addByte(String key, byte[] bytes, int size) {
             RequestBody requestBody = RequestBody
                     .create(MultipartBody.FORM, bytes);
-            long currentTime=System.currentTimeMillis();
-            params.put(key + "\"; filename=\"" + currentTime+size+".jpg", requestBody);
+            long currentTime = System.currentTimeMillis();
+            params.put(key + "\"; filename=\"" + currentTime + size + ".jpg", requestBody);
             return this;
         }
 
